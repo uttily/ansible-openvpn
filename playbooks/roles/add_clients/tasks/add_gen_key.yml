@@ -30,7 +30,7 @@
 
 - name: OpenVPN | Add Clients | Read private key pass phrases
   local_action: command cat "{{ local_creds_folder }}/{{ item }}/{{ openvpn_server_common_name }}_pk_pass.txt"
-  no_log: true
+  no_log: false
   become: False
   register: client_pk_passwords
   with_items: "{{ clients_to_add }}"
