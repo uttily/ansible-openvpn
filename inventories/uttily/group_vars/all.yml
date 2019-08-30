@@ -51,6 +51,7 @@ valid_clients:
   - daniel.harris
   - jane.whipps
   - gayle.devine
+  - rafael.serrano
 
 # Whether the install.yml playbook will load iptables rules.
 # If set to false you have to apply them yourself. See README section "Firewall".
